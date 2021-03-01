@@ -2,6 +2,7 @@
 import Laser
 import Player
 import ship
+import Enemy
 
 import pygame
 import os
