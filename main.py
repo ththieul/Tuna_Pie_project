@@ -1,6 +1,7 @@
 #Modules perso
 import Laser
 import Player
+
 import ship
 import Enemy
 
@@ -30,6 +31,7 @@ YELLOW_LASER = pygame.image.load(os.path.join("assets/img", "pixel_laser_yellow.
 
 # Background
 BG = pygame.transform.scale(pygame.image.load(os.path.join("assets/img", "background-black.png")), (WIDTH, HEIGHT))
+
 
 def collide(obj1, obj2):
     offset_x = obj2.x - obj1.x
