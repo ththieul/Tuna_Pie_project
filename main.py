@@ -1,7 +1,5 @@
 #Modules perso
 import Laser
-import Player
-import ship
 
 import pygame
 import os
