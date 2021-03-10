@@ -1,13 +1,11 @@
 #Modules perso
-import Laser
-import Player
-import ship
-import Enemy
+
+from Player import Player
+from Enemy import Enemy
 
 
 import pygame
 import os
-import time
 import random
 pygame.font.init()
 
@@ -32,10 +30,12 @@ YELLOW_LASER = pygame.image.load(os.path.join("assets/img", "poisson.png"))
 # Background
 BG = pygame.transform.scale(pygame.image.load(os.path.join("assets/img", "background-black.png")), (WIDTH, HEIGHT))
 
+
 def collide(obj1, obj2):
     offset_x = obj2.x - obj1.x
     offset_y = obj2.y - obj1.y
     return obj1.mask.overlap(obj2.mask, (offset_x, offset_y)) != None
+
 
 def main():
     run = True

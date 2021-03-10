@@ -1,3 +1,6 @@
+from Laser import *
+
+
 class Ship:
     COOLDOWN = 30
 

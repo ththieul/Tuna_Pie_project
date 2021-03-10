@@ -1,7 +1,6 @@
-import pygame
-from main import *
 from ship import *
 pygame.font.init()
+
 
 class Player(Ship):
     def __init__(self, x, y, health=100):
