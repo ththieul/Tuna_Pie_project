@@ -1,4 +1,6 @@
-from Laser import *
+from Laser import Laser
+
+HEIGHT = 750
 
 
 class Ship:

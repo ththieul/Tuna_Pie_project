@@ -1,4 +1,17 @@
-from Laser import *
+from ship import Ship
+from Laser import Laser
+
+import pygame
+import os
+
+
+RED_SPACE_SHIP = pygame.image.load(os.path.join("assets/img", "pie.png"))
+GREEN_SPACE_SHIP = pygame.image.load(os.path.join("assets/img", "pie_2.png"))
+BLUE_SPACE_SHIP = pygame.image.load(os.path.join("assets/img", "pie_3.png"))
+
+RED_LASER = pygame.image.load(os.path.join("assets/img", "pixel_laser_red.png"))
+GREEN_LASER = pygame.image.load(os.path.join("assets/img", "pixel_laser_green.png"))
+BLUE_LASER = pygame.image.load(os.path.join("assets/img", "pixel_laser_blue.png"))
 
 
 class Enemy(Ship):

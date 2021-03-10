@@ -1,4 +1,6 @@
-from main import *
+from main import collide
+
+import pygame
 
 
 class Laser:

@@ -1,5 +1,12 @@
-from ship import *
-pygame.font.init()
+from ship import Ship
+
+import pygame
+import os
+
+
+HEIGHT = 750
+YELLOW_SPACE_SHIP = pygame.image.load(os.path.join("assets/img", "handi.png"))
+YELLOW_LASER = pygame.image.load(os.path.join("assets/img", "poisson.png"))
 
 
 class Player(Ship):
